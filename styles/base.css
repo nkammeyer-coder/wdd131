@@ -41,20 +41,20 @@ nav {
     background-color: var(--secondary-color);
 }
 
-nav a {
+nav a:visited {
     color: var(--white);
     text-decoration: none;
     padding: 2rem 2rem;
     display: block;
     font-size: 1.5rem;
-    font-weight: 450;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
     flex: 1;
     text-align: center;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     background-color: var(--white);
     color: var(--secondary-color);
 }
