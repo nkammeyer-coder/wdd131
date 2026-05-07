@@ -41,10 +41,11 @@ nav {
     background-color: var(--secondary-color);
 }
 
-nav a, nav a:visited {
+nav a, nav a:link, nav a:visited {
     color: var(--white);
+    background-color: transparent;
     text-decoration: none;
-    padding: 2rem 2rem;
+    padding: 2rem;
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
