@@ -56,7 +56,7 @@ nav a, nav a:visited {
 
 nav a:hover, nav a:focus {
     background-color: var(--white);
-    color: var(--secondary-color);
+    color: #000000;
 }
 
 main {
@@ -128,7 +128,8 @@ main h1 {
 }
 
 .card a {
-    color: #1a4fb0;
+    color: #0e2b60;
+    font-weight: 600;
 }
 .about-me, .about-location {
     display: grid;
