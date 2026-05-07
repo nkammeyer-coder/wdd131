@@ -41,7 +41,7 @@ nav {
     background-color: var(--secondary-color);
 }
 
-nav a:visited {
+nav a, nav a:visited {
     color: var(--white);
     text-decoration: none;
     padding: 2rem 2rem;
