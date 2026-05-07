@@ -47,7 +47,7 @@ nav a, nav a:visited {
     padding: 2rem 2rem;
     display: block;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
     flex: 1;
