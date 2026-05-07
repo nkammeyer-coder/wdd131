@@ -36,28 +36,26 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--secondary-color);
+    background-color: #222222;
 }
 
-nav a, nav a:link, nav a:visited {
-    color: var(--white);
-    background-color: transparent;
-    text-decoration: none;
-    padding: 2rem 2rem;
+nav a {
+    flex: 1;
     display: block;
+    padding: 2rem;
+    color: #ffffff;
+    background-color: #222222;
+    text-align: center;
+    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    flex: 1;
-    text-align: center;
 }
 
-nav a:hover, nav a:focus {
-    background-color: var(--white);
+nav a:hover,
+nav a:focus {
     color: #000000;
+    background-color: #ffffff;
+}r: #000000;
 }
 
 main {
