@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arizona</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Neal Kammeyer | Places page"/>
+    <meta name="author" content="Neal Kammeyer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+       <header>
+            <h1>Arizona</h1>
+       </header>
+
+    <main>
+        <section class="hero">  
+            <picture>
+                <source srcset="images/arizona.webp" media="(min-width: 800px)">
+                <img src="images/arizona_min.webp" alt="Aerial view of The Ranch">
+            </picture>
+        </section>
+
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 113,990 sq mi</p>
+            <p><strong>Population:</strong> 7,431,344</p>
+            <p><strong>Capital:</strong> Phoenix</p>
+            <p><strong>Language:</strong> English</p>
+            <p><strong>Time Zone:</strong> Mountain Standard Time</p>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/cloud-sun-fill.svg" alt="Weather icon">
+            <p><strong>Temperature:</strong> 80°F</p>
+            <p><strong>Conditions:</strong> Sunny</p>
+            <p><strong>Wind:</strong> 15 mph</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Neal Kammeyer | Arizona, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
