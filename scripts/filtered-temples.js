@@ -107,7 +107,7 @@ function displayTemples(filteredTemples) {
       <p><strong>Location:</strong> ${temple.location}</p>
       <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
       <p><strong>Size:</strong> ${temple.area} sq ft</p>
-      <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
+      <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
     `;
 
     templeGrid.appendChild(card);
