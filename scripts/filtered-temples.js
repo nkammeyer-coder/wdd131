@@ -67,5 +67,75 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
-  // Add more temple objects here...
+  {
+    templeName: "Snowflake Arizona",
+    location: "Snowflake, Arizona, United States",
+    dedicated: "2002, March, 3",
+    area: 18700,
+    imageUrl: 
+    "https://churchofjesuschristtemples.org/assets/img/temples/snowflake-arizona-temple/snowflake-arizona-temple-35832.jpg"  
+},
+  {
+    templeName: "Las Vegas Nevada",
+    location: "Las Vegas, Nevada, United States",
+    dedicated: "1989, December, 16",
+    area: 80350,
+    imageUrl: 
+    "https://churchofjesuschristtemples.org/assets/img/temples/las-vegas-nevada-temple/las-vegas-nevada-temple-69888.jpg"
+  },
+  {
+    templeName: "St. George Utah",
+    location: "St. George, Utah, United States",
+    dedicated: "1877, April, 6",
+    area: 143969,
+    imageUrl: 
+    "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40449.jpg"
+  }
 ];
+
+const templeGrid = document.querySelector(".temple-grid");
+
+function displayTemples(filteredTemples) {
+  templeGrid.innerHTML = "";
+
+  filteredTemples.forEach((temple) => {
+    const card = document.createElement("section");
+    card.classList.add("temple-card");
+
+    card.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p><strong>Location:</strong> ${temple.location}</p>
+      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+      <p><strong>Size:</strong> ${temple.area} sq ft</p>
+      <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
+    `;
+
+    templeGrid.appendChild(card);
+  });
+}
+
+function getDedicationYear(temple) {
+  return parseInt(temple.dedicated.split(",")[0]);
+}
+
+document.querySelectorAll("nav a").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const filter = event.target.textContent;
+
+    if (filter === "Home") {
+      displayTemples(temples);
+    } else if (filter === "Old") {
+      displayTemples(temples.filter((temple) => getDedicationYear(temple) < 1900));
+    } else if (filter === "New") {
+      displayTemples(temples.filter((temple) => getDedicationYear(temple) > 2000));
+    } else if (filter === "Large") {
+      displayTemples(temples.filter((temple) => temple.area > 90000));
+    } else if (filter === "Small") {
+      displayTemples(temples.filter((temple) => temple.area < 10000));
+    }
+  });
+});
+
+displayTemples(temples);
