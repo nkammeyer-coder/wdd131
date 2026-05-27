@@ -1,0 +1,37 @@
+@media screen and (min-width: 765px) {
+   header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        max-width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    main h2 {
+        grid-column: 1 / -1;
+    }
+
+    figure {
+        margin: 0;
+    }
+}
