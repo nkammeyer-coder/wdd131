@@ -1,0 +1,32 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Kaushan Script", cursive;
+    color: #61422d;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Kaushan Script", cursive;
+    color: #61422d;
+    font-size: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #9b8f87;
+}
+
