@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginners guide to pellet smoking with recipes, temperature tips, equipment recommendations, and smoking advice.">
+    <meta name="author" content="Neal Kammeyer">
+    <title>The Pellet Smoker Resource Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+     <header>
+        <h1>The Pellet Smoker Resource Guide</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="references.html">References</a>
+        </nav>
+    </header>
+<main>
+   
+    <section class="intro">
+        <h2>Recipes for Every Skill Level</h2>
+        <p>
+            These pellet smoker recipes are designed to help beginners learn
+            basic smoking temperatures, internal temperatures, and simple methods
+            for great barbecue.
+        </p>
+    </section>
+
+    <section class="recipe-filters">
+        <h2>Filter Recipes</h2>
+        <button data-filter="all">All</button>
+        <button data-filter="appetizer">Appetizers</button>
+        <button data-filter="beef">Beef</button>
+        <button data-filter="pork">Pork</button>
+        <button data-filter="poultry">Poultry</button>
+        
+    </section>
+
+    <section class="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+  
+            <article class="recipe-card" data-category="appetizer">
+                <a href="https://www.meatchurch.com/blogs/recipes/smoked-shotgun-shells?_pos=1&_sid=3f2a056f7&_ss=r" target="_blank" rel="noopener"><img src="images/shotgun-shells.jpg" alt="Smoked Shotgun Shells"></a>
+                <h3>Smoked Shotgun Shells</h3>
+                <p class="recipe-note">A family favorite appetizer with all the flavor.</p>
+                <p><strong>Neal's Note:</strong> While this is an appetizer, it is often a main course.  And I must say, it is great as leftovers.</p>
+                <a class="recipe-link" href="https://www.meatchurch.com/blogs/recipes/smoked-shotgun-shells?_pos=1&_sid=3f2a056f7&_ss=r" target="_blank" rel="noopener">
+                    View Full Recipe
+                </a>
+            </article>
+
+            <article class="recipe-card" data-category="beef">
+                <a href="https://www.meatchurch.com/blogs/recipes/pellet-grill-brisket" target="_blank" rel="noopener"><img src="images/smoked-brisket.jpg" alt="Pellet Grill Brisket"></a>
+                <h3>Pellet Grill Brisket</h3>
+                <p class="recipe-note">Super easy and full of flavor</p>
+                <p><strong>Neal's Note:</strong> I recommend subbing in Holy Voodoo in place of Holy Gospel and plan on using 2 TBSP in its place. Trust me. It's worth it!</p>
+                <a class="recipe-link" href="https://www.meatchurch.com/blogs/recipes/pellet-grill-brisket" target="_blank" rel="noopener">
+                    View Full Recipe
+                </a>
+            </article>
+
+            <article class="recipe-card" data-category="pork">
+                <a href="https://www.windingcreekranch.org/pit-boss-pulled-pork/#recipe" target="_blank" rel="noopener"><img src="images/smoked-pork-butt.jpg" alt="Smoked Pulled Pork Butt"></a>
+                <h3>Smoked Pulled Pork Butt</h3>
+                <p class="recipe-note">I like big pork butts and I cannot lie!</p>
+                <p><strong>Neal's Note:</strong> I like to spritz with an apple juice / apple cider vinegar every 30 minutes after the pork reaches 120 degrees.</p>
+                <a class="recipe-link" href="https://www.windingcreekranch.org/pit-boss-pulled-pork/#recipe" target="_blank" rel="noopener">
+                    View Full Recipe
+                </a>
+            </article>
+
+            <article class="recipe-card" data-category="poultry">
+                <a href="https://www.traeger.com/recipes/herb-roasted-turkey" target="_blank" rel="noopener"><img src="images/herb-roasted-turkey.jpg" alt="Pellet Grill Turkey"></a>
+                <h3>Herb Roasted Turkey</h3>
+                <p class="recipe-note">It's time for Thanksgiving.</p>
+                <p><strong>Neal's Note:</strong> I normally brine my turkey in a mix of chicken broth or vegetable broth with a poultry seasoning blend, garlic salt, and water.</p>
+                <a class="recipe-link" href="https://www.traeger.com/recipes/herb-roasted-turkey" target="_blank" rel="noopener">
+                    View Full Recipe
+                </a>
+            </article>
+        </div>
+
+    </section>
+</main>
+   <footer>
+        <p>&copy; <span id="currentyear"></span> Neal Kammeyer</p>
+        <p id="lastModified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+</html>
