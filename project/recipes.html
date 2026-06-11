@@ -89,6 +89,34 @@
         </div>
 
     </section>
+
+    <section class="suggestion-form">
+        <h2>Suggest a Recipe</h2>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+
+            <label for="recipeCategory">Category</label>
+            <select id="recipeCategory" name="recipeCategory" required>
+                <option value="">Choose a category</option>
+                <option value="appetizer">Appetizer</option>
+                <option value="beef">Beef</option>
+                <option value="pork">Pork</option>
+                <option value="poultry">Poultry</option>
+            </select>
+
+            <label for="recipeLink">Recipe URL</label>
+            <input type="url" id="recipeLink">
+
+            <label for="recipeMessage"> Why should it be added to The Pellet Smoker Resource Guide recipe list?</label>
+            <textarea id="recipeMessage" name="recipeMessage" required></textarea>
+
+            <button type="submit">Submit Suggestion</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
 </main>
    <footer>
         <p>&copy; <span id="currentyear"></span> Neal Kammeyer</p>

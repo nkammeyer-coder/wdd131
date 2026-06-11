@@ -289,6 +289,7 @@ footer a {
 .recipe-link:hover {
     background-color: #7b573d;
 }
+
 @media screen and (min-width: 700px) {
     .recipe-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -299,6 +300,68 @@ footer a {
     .recipe-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/*------------------------*/
+/* Suggestion Form */
+/*------------------------*/
+
+.suggestion-form {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 2px solid #d8c7b3;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.suggestion-form h2 {
+    margin-bottom: 1rem;
+}
+
+.suggestion-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.suggestion-form label {
+    font-weight: bold;
+}
+
+.suggestion-form input,
+.suggestion-form select,
+.suggestion-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #d8c7b3;
+    border-radius: 6px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.suggestion-form textarea {
+    min-height: 120px;
+}
+
+.suggestion-form button {
+    width: fit-content;
+    background-color: #61422d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.suggestion-form button:hover {
+    background-color: #7b573d;
+}
+
+#formMessage {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #61422d;
 }
 
 /*------------------------*/

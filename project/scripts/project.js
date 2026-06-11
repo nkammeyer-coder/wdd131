@@ -13,6 +13,13 @@ lastModified.textContent = `Last Modified: ${modifiedDate.toLocaleString("en-US"
     hour12: true
 })}`;
 
+const suggestion = {
+    name: document.querySelector("#recipeName").value,
+    category: document.querySelector("#recipeCategory").value,
+    link: document.querySelector("#recipeLink").value,
+    message: document.querySelector("#recipeMessage").value
+};
+
 const filterButtons = document.querySelectorAll(".recipe-filters button");
 const recipeCards = document.querySelectorAll(".recipe-card");
 
@@ -40,5 +47,35 @@ function filterRecipes(filter) {
         } else {
             card.style.display = "none";
         }
+    });
+}
+
+const recipeIdeas = [];
+
+const recipeForm = document.querySelector("#recipeForm");
+const formMessage = document.querySelector("#formMessage");
+
+if (recipeForm) {
+    recipeForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const suggestion = {
+            name: document.querySelector("#recipeName").value,
+            category: document.querySelector("#recipeCategory").value,
+            link: document.querySelector("#recipeLink").value,
+            message: document.querySelector("#recipeMessage").value
+        };
+
+        recipeIdeas.push(suggestion);
+
+        localStorage.setItem(
+            "recipeSuggestions",
+            JSON.stringify(recipeIdeas)
+        );
+
+        formMessage.textContent =
+            `Thank you! Your ${suggestion.category} recipe suggestion has been received.`;
+
+        recipeForm.reset();
     });
 }
