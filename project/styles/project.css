@@ -300,3 +300,53 @@ footer a {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/*------------------------*/
+/* Equipment Page */
+/*------------------------*/
+
+.equipment {
+    margin-top: 3rem;
+}
+
+.equipment h2 {
+    margin-bottom: 1.5rem;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.equipment-card {
+    background-color: white;
+    border: 2px solid #d8c7b3;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.equipment-card h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .equipment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .equipment-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
