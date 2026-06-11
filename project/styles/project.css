@@ -213,7 +213,17 @@ footer a {
 /* Recipes Page */
 /*------------------------*/
 
+.intro p {
+    margin-bottom: 2rem;
+}
 
+.intro h2 {
+    font-size: 2rem;
+}
+
+.recipes {
+    margin-top: 3rem;
+    }
 
 .recipe-filters {
     text-align: center;
